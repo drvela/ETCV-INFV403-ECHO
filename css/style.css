@@ -165,10 +165,6 @@ body {
 	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
 }
 
-.main {
-	min-height: 300px;
-}
-
 .main > p {
 	color: white;
 	font-size: 2.5rem;
@@ -178,8 +174,6 @@ body {
 .testimonials {
 	background-color: #4D6A7F;
 	overflow-x: hidden !important;
-	margin-left: -100%;
-	margin-right: -100%;
 	text-align: center;
 }
 
