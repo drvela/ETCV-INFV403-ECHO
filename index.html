@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta name="viewport" content="width=device-width">
-	<title>ECHO Web Solutions - Home</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>ECHO Web Solutions - Home</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script rel="text/javascript" src="script.js"></script>
+    <meta name="viewport" content="width=device-width">
 </head>
-<body>
-		<nav role="menu" class="nav">
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">Previous Work</a></li>
-				<li><a href="">News</a></li>
-				<li><a href="">Pricing</a></li>
-				<li><a href="">About Us</a></li>
-			</ul>
-		</nav>
-		<div class="header">
-			<img src="img/logoWhite.png">
-			<h1>ECHO Web Solutions</h1>
-		</div>
-		<div class="main">
-			<p>Let us build the best site for you and your needs.</p>
-			<section class="testimonials">
-				<div id="test1">
-					<p><q>ECHO designed the site, the logo, set up our domain, absolutely everything. They turned our vision into a reality.</q> - Client</p>
-				</div>
-			</section>
-		</div>
-		<footer role="info">
-			<p>
-				<small>
+
+<body onload="currentPage()">
+    <nav role="menu" class="nav">
+        <ul>
+            <li><a id="home" href="">Home</a>
+            </li>
+            <li><a id="prev-work" href="">Previous Work</a>
+            </li>
+            <li><a id="news" href="">News</a>
+            </li>
+            <li><a id="pricing" href="">Pricing</a>
+            </li>
+            <li><a id="about-us" href="">About Us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header">
+        <img alt="ECHO logo" title="ECHO logo" src="img/logoBlue.svg">
+        <h1>ECHO</h1>
+        <h1> Web Solutions</h1>
+    </div>
+    <div class="main">
+        <p>Let us build the best site for you and your needs.</p>
+        <div class="testimonials">
+            <p>
+                <q>ECHO designed the site, the logo, set up our domain, absolutely everything. They turned our vision into a reality.</q> - Client</p>
+        </div>
+        <br>
+        <div class="testimonials">
+            <p>
+                <q>ECHO designed the site, the logo, set up our domain, absolutely everything. They turned our vision into a reality.</q> - Client</p>
+        </div>
+        <br>
+        <div class="testimonials">
+            <p>
+                <q>ECHO designed the site, the logo, set up our domain, absolutely everything. They turned our vision into a reality.</q> - Client</p>
+        </div>
+        <br>
+    </div>
+    <footer role="info">
+        <p>
+            <small>
 					ETCV/INFV403, Fall semester, 2014
 				</small>
-			</p>
-		</footer>
+        </p>
+    </footer>
 </body>
 </html>
