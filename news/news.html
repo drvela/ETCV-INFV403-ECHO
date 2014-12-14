@@ -6,23 +6,7 @@
     <title>ECHO Web Solutions - News</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/style.css">
-    <script>
-    function currentPage() {
-        var page = document.getElementsByTagName("title")[0].innerHTML;
-        if (page.indexOf('Projects') >= 0) { // Previous Work
-            var navEl = document.getElementById('prev-work');
-        } else if (page.indexOf('News') >= 0) { // News
-            var navEl = document.getElementById('news');
-        } else if (page.indexOf('Pricing') >= 0) { // Pricing
-            var navEl = document.getElementById('pricing');
-        } else if (page.indexOf('About Us') >= 0) { // About Us
-            var navEl = document.getElementById('about-us');
-        } else { // Home page
-            var navEl = document.getElementById('home');
-        }
-        navEl.setAttribute('class', 'current');
-    }
-    </script>
+    <script src="../script.js" type="text/javascript" ></script>
     <meta name="viewport" content="width=device-width">
 </head>
 

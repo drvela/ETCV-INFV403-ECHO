@@ -1,6 +1,6 @@
 function currentPage() { 
     var page = document.getElementsByTagName("title")[0].innerHTML;
-    if (page.indexOf('Previous Work') >= 0) { // Previous Work
+    if (page.indexOf('Projects') >= 0) { // Previous Work
         var navEl = document.getElementById('prev-work');
         navEl.setAttribute('class', 'current');
     } else if (page.indexOf('News') >= 0) { // News
