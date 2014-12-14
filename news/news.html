@@ -1,80 +1,110 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>ECHO Web Solutions - Pricing</title>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-            <div class="page">
-                <nav role="menu" class="nav">
-                        <ul>
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../projects/projects.html">Previous Work</a></li>
-                                <li><a href="news.html">News</a></li>
-                                <li><a href="../pricing/pricing.html">Pricing</a></li>
-                                <li><a href="../personal/index_updated.html">About Us</a></li>
-                        </ul>
-                </nav>
-                <div class="header">
-                        <img src="../img/logoWhite.png">
-                        <h1>ECHO Web Solutions</h1>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ECHO Web Solutions - Pricing</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+    function currentPage() {
+        var page = document.getElementsByTagName("title")[0].innerHTML;
+        if (page.indexOf('Projects') >= 0) { // Previous Work
+            var navEl = document.getElementById('prev-work');
+        } else if (page.indexOf('News') >= 0) { // News
+            var navEl = document.getElementById('news');
+        } else if (page.indexOf('Pricing') >= 0) { // Pricing
+            var navEl = document.getElementById('pricing');
+        } else if (page.indexOf('About Us') >= 0) { // About Us
+            var navEl = document.getElementById('about-us');
+        } else { // Home page
+            var navEl = document.getElementById('home');
+        }
+        navEl.setAttribute('class', 'current');
+    }
+    </script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body onload="currentPage()">
+    <div class="page">
+        <nav role="menu" class="nav">
+            <ul>
+                <li><a id="home" href="../index.html">Home</a>
+                </li>
+                <li><a id="prev-work" href="../projects/projects.html">Previous Work</a>
+                </li>
+                <li><a id="news" href="">News</a>
+                </li>
+                <li><a id="pricing" href="../pricing/pricing.html">Pricing</a>
+                </li>
+                <li><a id="about-us" href="../personal/index.html">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header">
+            <img src="../img/logoWhite.png">
+            <h1>ECHO Web Solutions</h1>
+        </div>
+        <div class="main">
+            <p>Let us build the best site for you and your needs.</p>
+            <section class="testimonials">
+                <div id="test1">
+                    <p>
+                        <q>ECHO designed the site, the logo, set up our domain, absolutely everything. They turned our vision into a reality.</q> - Client</p>
                 </div>
-                <div class="main">
-                        <p>Let us build the best site for you and your needs.</p>
-                        <section class="testimonials">
-                                <div id="test1">
-                                        <p><q>ECHO designed the site, the logo, set up our domain, absolutely everything. They turned our vision into a reality.</q> - Client</p>
-                                </div>
-                        </section>
-		</div>
-                <main>
-                 	<div class="post-3 post type-post status-publish format-standard hentry category-misc-web-design" id="post-3">
-				<h2>At pri odio omnes habemus, mel probo.</h2>
-				<small>February 21st, 2013</small>
+            </section>
+        </div>
+        <main>
+            <div class="post-3 post type-post status-publish format-standard hentry category-misc-web-design" id="post-3">
+                <h2>At pri odio omnes habemus, mel probo.</h2>
+                <small>February 21st, 2013</small>
 
-				<div class="entry">
-					<p>Maecenas nec consequat mauris, et euismod nisi. Vestibulum quam tellus, consectetur et quam id, tincidunt porttitor erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus vitae libero non nulla commodo rutrum ut non nunc. Fusce sit amet ipsum non magna cursus congue. Phasellus eleifend gravida nisl, sed imperdiet dui egestas eu. Donec consequat felis in libero euismod, a varius tortor dapibus. Vivamus consequat, odio feugiat porttitor ultrices, urna augue accumsan lectus, et sagittis massa lectus ut ante. Nullam sed nunc congue, dignissim justo a, semper tellus. Phasellus sit amet dolor urna. Proin posuere eros magna, vulputate tincidunt nunc blandit nec. Pellentesque dignissim sagittis metus vitae vestibulum. Fusce at felis et orci mattis pretium. Donec tristique sagittis quam sit amet lacinia. Mauris et sem quis metus interdum consectetur. Donec pharetra ultrices dui sit amet placerat.</p>
-					<section class="more">
-					<p class="mlink"><a href="post-3.html" title="post-3">Read more &raquo;</a></p>
-		        		</section>
-				</div>
-			</div>
-			<div class="post-2 post type-post status-publish format-standard hentry category-misc-web-design" id="post-2">
-				<h2>Deleniti percipitur definitionem eu est, harum consetetur.</h2>
-				<small>January 8th, 2013</small>
+                <div class="entry">
+                    <p>Maecenas nec consequat mauris, et euismod nisi. Vestibulum quam tellus, consectetur et quam id, tincidunt porttitor erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus vitae libero non nulla commodo rutrum ut non nunc. Fusce sit amet ipsum non magna cursus congue. Phasellus eleifend gravida nisl, sed imperdiet dui egestas eu. Donec consequat felis in libero euismod, a varius tortor dapibus. Vivamus consequat, odio feugiat porttitor ultrices, urna augue accumsan lectus, et sagittis massa lectus ut ante. Nullam sed nunc congue, dignissim justo a, semper tellus. Phasellus sit amet dolor urna. Proin posuere eros magna, vulputate tincidunt nunc blandit nec. Pellentesque dignissim sagittis metus vitae vestibulum. Fusce at felis et orci mattis pretium. Donec tristique sagittis quam sit amet lacinia. Mauris et sem quis metus interdum consectetur. Donec pharetra ultrices dui sit amet placerat.</p>
+                    <section class="more">
+                        <p class="mlink"><a href="post-3.html" title="post-3">Read more &raquo;</a>
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div class="post-2 post type-post status-publish format-standard hentry category-misc-web-design" id="post-2">
+                <h2>Deleniti percipitur definitionem eu est, harum consetetur.</h2>
+                <small>January 8th, 2013</small>
 
-				<div class="entry">
-					<p>Lorem ipsum dolor sit amet, vix hendrerit suscipiantur an. Et adipiscing definiebas incorrupte sit. Vis sint nullam deseruisse no. Ut convenire necessitatibus vis. Hendrerit constituto constituam ad sit, in probo iuvaret est. Ex denique molestie est, no mei munere principes.Pro omnium dissentiet id, cu pri sumo apeirian principes. In eum unum autem dolorum, ei solum fabellas deseruisse vix. Et oratio regione nec, ne admodum splendide definiebas per. Recusabo concludaturque an cum, ad eos stet graeci aperiam, ei nostro vocent alienum qui. Te tritani docendi duo.</p>
-					<section class="more">
-					<p class="mlink"><a href="post-2.html" title="post-2">Read more &raquo;</a></p>
-		        		</section>				
+                <div class="entry">
+                    <p>Lorem ipsum dolor sit amet, vix hendrerit suscipiantur an. Et adipiscing definiebas incorrupte sit. Vis sint nullam deseruisse no. Ut convenire necessitatibus vis. Hendrerit constituto constituam ad sit, in probo iuvaret est. Ex denique molestie est, no mei munere principes.Pro omnium dissentiet id, cu pri sumo apeirian principes. In eum unum autem dolorum, ei solum fabellas deseruisse vix. Et oratio regione nec, ne admodum splendide definiebas per. Recusabo concludaturque an cum, ad eos stet graeci aperiam, ei nostro vocent alienum qui. Te tritani docendi duo.</p>
+                    <section class="more">
+                        <p class="mlink"><a href="post-2.html" title="post-2">Read more &raquo;</a>
+                        </p>
+                    </section>
 
-				</div>
-			</div>
+                </div>
+            </div>
 
-			<div class="post-1 post type-post status-publish format-standard hentry category-misc-web-design" id="post-1">
-				<h2>Malis audire gloriatur pro ea. Pri te sumo molestiae.</h2>
-				<small>December 1st, 2012</small>
+            <div class="post-1 post type-post status-publish format-standard hentry category-misc-web-design" id="post-1">
+                <h2>Malis audire gloriatur pro ea. Pri te sumo molestiae.</h2>
+                <small>December 1st, 2012</small>
 
-				<div class="entry">
-					<p>Sit habeo accommodare at, an facilis expetenda suscipiantur sit. His ignota option perpetua ut, nam esse putant postulant ex, diceret apeirian repudiare ei mea. Epicuri facilisi imperdiet te has, eum no meliore suavitate. Te sit deterruisset comprehensam, his in officiis consetetur, eos ut amet tale efficiantur. Ex nec erant aliquando neglegentur.</p>
-				<section class="more">
-					<p class="mlink"><a href="post-1.html" title="post-1">Read more &raquo;</a></p>
-		        	</section>
+                <div class="entry">
+                    <p>Sit habeo accommodare at, an facilis expetenda suscipiantur sit. His ignota option perpetua ut, nam esse putant postulant ex, diceret apeirian repudiare ei mea. Epicuri facilisi imperdiet te has, eum no meliore suavitate. Te sit deterruisset comprehensam, his in officiis consetetur, eos ut amet tale efficiantur. Ex nec erant aliquando neglegentur.</p>
+                    <section class="more">
+                        <p class="mlink"><a href="post-1.html" title="post-1">Read more &raquo;</a>
+                        </p>
+                    </section>
 
-				</div>
-			</div>
-			<footer role="info">
-			<p>
-				<small>
+                </div>
+            </div>
+            <footer role="info">
+                <p>
+                    <small>
 					ETCV/INFV403, Fall semester, 2014
 				</small>
-			</p>
-		</footer>
- 
-             </main>
-        </div>
-    </body>
+                </p>
+            </footer>
+
+        </main>
+    </div>
+</body>
+
 </html>

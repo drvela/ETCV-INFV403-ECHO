@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ECHO Web Solutions - Pricing</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+    function currentPage() {
+        var page = document.getElementsByTagName("title")[0].innerHTML;
+        if (page.indexOf('Projects') >= 0) { // Previous Work
+            var navEl = document.getElementById('prev-work');
+        } else if (page.indexOf('News') >= 0) { // News
+            var navEl = document.getElementById('news');
+        } else if (page.indexOf('Pricing') >= 0) { // Pricing
+            var navEl = document.getElementById('pricing');
+        } else if (page.indexOf('About Us') >= 0) { // About Us
+            var navEl = document.getElementById('about-us');
+        } else { // Home page
+            var navEl = document.getElementById('home');
+        }
+        navEl.setAttribute('class', 'current');
+    }
+    </script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body onload="currentPage()">
+    <div class="page">
+        <nav role="menu" class="nav">
+            <ul>
+                <li><a id="home" href="../index.html">Home</a>
+                </li>
+                <li><a id="prev-work" href="../projects/projects.html">Previous Work</a>
+                </li>
+                <li><a id="news" href="../news/news.html">News</a>
+                </li>
+                <li><a id="pricing" href="">Pricing</a>
+                </li>
+                <li><a id="about-us" href="../personal/index.html">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header">
+            <img src="../img/logoWhite.png">
+            <h1>ECHO Web Solutions</h1>
+        </div>
+        <div class="main">
+            <p>Let us build the best site for you and your needs.</p>
+            <section class="testimonials">
+                <div id="test1">
+                    <p>
+                        <q>ECHO designed the site, the logo, set up our domain, absolutely everything. They turned our vision into a reality.</q> - Client</p>
+                </div>
+            </section>
+        </div>
+        <main class="clearfix">
+            <div class="pricelist">
+                <section class="table">
+                    <h2 class="table-title">Pricing List 2014</h2>
+                    <figure class="table-img">
+                        <img src="img/pricinglist.png" width="800" height="500" alt="Pricing List 2014" title="ECHO Pricing List 2014" />
+                    </figure>
+                </section>
+            </div>
+            <div class="pform">
+                <section class="pform-heading">
+                    <h2 class="pform-tittle">Project Brief</h2>
+                    <p> Please fill out the information below and click submit. You can also download and fill out the form from the Download link and send it to us by email. One of our experts will be in touch with you right away.</p>
+                </section>
+                <form id="priceform" action="mailto:drvela@email.arizona.edu?Subject=Test_Post" method="POST" enctype="text/plain">
+                    <fieldset>
+                        <h2 class="hdr-contact">Contact Information</h2>
+                        <div class="fields">
+                            <label for="company">Company:</label>
+                            <input type="text" name="company">
+                            <br>
+                            <label for="contact">Contact:</label>
+                            <input type="text" name="contact">
+                            <br>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email">
+                            <br>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" name="phone">
+                            <br>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <h2 class="hdr-about">About your company</h2>
+                        <div class="radios">
+                            <p>Do you have a logo design?</p>
+                            <input type="radio" name="logo" value="We have a great logo already">We have a great logo already
+                            <br>
+                            <input type="radio" name="logo" value="We have a logo but may want a redesign">We have a logo but may want a redesign
+                            <br>
+                            <input type="radio" name="logo" value="Logo needed">Logo needed
+                            <br>
+                        </div>
+                        <div class="radios">
+                            <p>E-Commerce?
+                                <p>
+                                    <input type="radio" name="logo" value="No, this website will not be selling anything">No, this website will not be selling anything
+                                    <br>
+                                    <input type="radio" name="logo" value="Yes, simple PayPal integration needed">Yes, simple PayPal integration needed
+                                    <br>
+                                    <input type="radio" name="logo" value="Yes, full shopping cart needed">Yes, full shopping cart needed
+                                    <br>
+                        </div>
+                        <div class="text">
+                            <p>What are your business objectives or other goals?</p>
+                            <textarea name="objectives" form="priceform" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="text">
+                            <p>Describe the users of your site.</p>
+                            <textarea name="objectives" form="priceform" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="text">
+                            <p>Where/how do people learn about your company/product/service?</p>
+                            <textarea name="objectives" form="priceform" cols="30" rows="10"></textarea>
+                        </div>
+                    </fieldset>
+
+
+                    <input type="submit" value="Submit">
+                </form>
+                <section class="pform-download">
+                    <p class="plink"><a href="http://u.arizona.edu/~barbaralafuente/infv403/pricing/doc/Project-Form.docx" title="Download">Download the form &raquo;</a>
+                    </p>
+                </section>
+            </div>
+
+            <footer role="info">
+                <p>
+                    <small>
+                    ETCV/INFV403, Fall semester, 2014
+                </small>
+                </p>
+            </footer>
+
+        </main>
+    </div>
+</body>
+
+</html>
