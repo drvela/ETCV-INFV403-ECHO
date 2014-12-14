@@ -141,15 +141,11 @@ body {
 	font-size: 1.5rem;
 }
 
-.nav ul li a {
+.nav ul li a, .nav ul li a:visited {
 	font-weight: bold;
 	text-decoration: none;
-	color: #fff;
-	padding: .25rem .5rem;
-}
-
-.nav ul li a:visited {
 	color: #000;
+	padding: .25rem .5rem;
 }
 
 .nav ul li a:hover, .nav ul li a:focus, .nav ul li a:active {

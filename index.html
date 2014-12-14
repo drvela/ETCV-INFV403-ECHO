@@ -6,7 +6,23 @@
     <title>ECHO Web Solutions - Home</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-    <script rel="text/javascript" src="script.js"></script>
+    <script>
+    function currentPage() {
+        var page = document.getElementsByTagName("title")[0].innerHTML;
+        if (page.indexOf('Projects') >= 0) { // Previous Work
+            var navEl = document.getElementById('prev-work');
+        } else if (page.indexOf('News') >= 0) { // News
+            var navEl = document.getElementById('news');
+        } else if (page.indexOf('Pricing') >= 0) { // Pricing
+            var navEl = document.getElementById('pricing');
+        } else if (page.indexOf('About Us') >= 0) { // About Us
+            var navEl = document.getElementById('about-us');
+        } else { // Home page
+            var navEl = document.getElementById('home');
+        }
+        navEl.setAttribute('class', 'current');
+    }
+    </script>
     <meta name="viewport" content="width=device-width">
 </head>
 
@@ -15,20 +31,19 @@
         <ul>
             <li><a id="home" href="">Home</a>
             </li>
-            <li><a id="prev-work" href="">Previous Work</a>
+            <li><a id="prev-work" href="projects/projects.html">Previous Work</a>
             </li>
-            <li><a id="news" href="">News</a>
+            <li><a id="news" href="news/index.html">News</a>
             </li>
-            <li><a id="pricing" href="">Pricing</a>
+            <li><a id="pricing" href="pricing/index.html">Pricing</a>
             </li>
-            <li><a id="about-us" href="">About Us</a>
+            <li><a id="about-us" href="personal/index.html">About Us</a>
             </li>
         </ul>
     </nav>
     <div class="header">
-        <img alt="ECHO logo" title="ECHO logo" src="img/logoBlue.png">
-        <h1>ECHO</h1>
-        <h1> Web Solutions</h1>
+        <img alt="ECHO logo" title="ECHO logo" src="img/logoWhite.png">
+        <h1>ECHO Web Solutions</h1>
     </div>
     <div class="main">
         <p>Let us build the best site for you and your needs.</p>
@@ -58,4 +73,5 @@
         </p>
     </footer>
 </body>
+
 </html>
