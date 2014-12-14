@@ -227,3 +227,9 @@ fieldset {
 	font-size: 1.75rem;
 	font-weight: 800;
 }
+
+.project-img img {
+	width: 80px;
+	height: 80px;
+}
+}
